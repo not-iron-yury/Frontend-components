@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма 1</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" action="mail.php" method="post">
+        <!--
+          Добавить в .htaccess следующие правила:
+            RewriteEngine on
+            RewriteRule ^mail.php$ - [F]
+        -->
+        <div class="form__field">
+          <label class="form__label form__label--name" for="name"
+            >Ваше имя</label
+          >
+          <input
+            class="form__input form__input--name"
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="off"
+          />
+        </div>
+        <div class="form__field form__input--tel">
+          <label class="form__label form__label--tel" for="tel"
+            >Номер телефона<span>*</span></label
+          >
+          <input
+            class="form__input form__input--tel"
+            type="tel"
+            id="tel"
+            name="tel"
+            required
+          />
+        </div>
+        <button class="form__btn">Отправить заявку</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
