@@ -15,7 +15,7 @@ $tel = $data['tel'];
 // Контент письма
 $title = 'Заявка с сайта'; // Название письма
 $body = '<p>Имя: <strong>'.$name.'</strong></p>'.
-        '<p>Телефон: <strong>'.$tel.'</strong></p>';
+        '<p>Телефон: <a href="tel:'.$tel.'">'.$tel.'</a> <p>';
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -28,7 +28,7 @@ try {
   // Настройки почты отправителя
   $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
   $mail->Username   = 'user.name@inbox.ru'; // Логин на почте (по факту сама почта)
-  $mail->Password   = 'QHkK7hnzQuhKP65yw8rw'; // Пароль для внешних приложений
+  $mail->Password   = 'MQHKPJk57JdGK5dqDxjH'; // Пароль для внешних приложений
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
