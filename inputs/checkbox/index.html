@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>custom checkbox</title>
+    <link rel="stylesheet" type="text/css" href="../../reset.css" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <fieldset class="filter__fieldset">
+        <legend id="filter-category-label" class="filter__legend">Категория</legend>
+
+        <label class="filter__label" for="category-folding">
+          <input type="checkbox" class="filter__checkbox" id="category-folding" name="category" value="folding" />
+          <span class="filter__checkbox-text">Складные</span>
+        </label>
+
+        <label class="filter__label" for="category-kitchen">
+          <input type="checkbox" class="filter__checkbox" id="category-kitchen" name="category" value="kitchen" />
+          <span class="filter__checkbox-text">Кухонные</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="filter__fieldset">
+        <legend id="filter-color-label" class="filter__legend">Цвет</legend>
+
+        <label class="filter__label" for="color-red">
+          <input type="checkbox" class="filter__checkbox" id="color-red" name="color" value="red" />
+          <span class="filter__checkbox-text">Красный</span>
+        </label>
+
+        <label class="filter__label" for="color-blue">
+          <input type="checkbox" class="filter__checkbox" id="color-blue" name="color" value="blue" />
+          <span class="filter__checkbox-text">Синий</span>
+        </label>
+      </fieldset>
+      <div id="filterResults" class="visually-hidden" aria-live="polite"></div>
+    </section>
+  </body>
+</html>
