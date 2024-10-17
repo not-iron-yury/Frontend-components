@@ -1,0 +1,49 @@
+/* Сброс стилей для input[type="number"] */
+input[type='number'] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Убираем стрелки для браузеров на базе WebKit */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Стили для контейнера количества */
+.quantity {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Стили для кнопок */
+.quantity-control button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Фокусное обрамление для доступности */
+.quantity-control button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Стили для кнопок при наведении */
+.quantity-control button:hover {
+  background-color: #e0e0e0;
+}
