@@ -1,0 +1,54 @@
+<!-- Без описания изображения -->
+<article class="product" aria-labelledby="product-title" aria-describedby="product-description product-price">
+  <picture aria-hidden="true">
+    <source srcset="./img/kartinka.webp 1x, ./img/kartinka@2x.webp 2x" type="image/webp" />
+    <source srcset="./img/kartinka.jpg 1x, ./img/kartinka@2x.jpg 2x" type="image/jpeg" />
+    <img
+      src="./img/kartinka.jpg"
+      srcset="./img/kartinka.jpg 1x, ./img/kartinka@2x.jpg 2x"
+      alt="текстовая альтернатива"
+      loading="lazy"
+      class="product__image"
+    />
+  </picture>
+  <div class="cart-item__specs">
+    <h2 id="product-title" class="product__title">Название товара</h2>
+    <p id="product-description" class="product__descr">
+      Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.
+    </p>
+    <p id="product-price" class="product__price">
+      Цена: <span itemprop="price" aria-label="1000 рублей">1000 руб.</span>
+    </p>
+    <button type="button" aria-label="Купить {Название товара} за {1000} рублей">Купить</button>
+  </div>
+</article>
+
+<!-- C подробным описанием изображения -->
+<article
+  class="product"
+  aria-labelledby="product-title"
+  aria-describedby="product-image product-description product-price"
+>
+  <picture>
+    <source srcset="./img/kartinka.webp 1x, ./img/kartinka@2x.webp 2x" type="image/webp" />
+    <source srcset="./img/kartinka.jpg 1x, ./img/kartinka@2x.jpg 2x" type="image/jpeg" />
+    <img
+      src="./img/kartinka.jpg"
+      srcset="./img/kartinka.jpg 1x, ./img/kartinka@2x.jpg 2x"
+      id="product-image"
+      alt="подробное описание изображения"
+      loading="lazy"
+      class="product__image"
+    />
+  </picture>
+  <div class="cart-item__specs">
+    <h2 id="product-title" class="product__title">Название товара</h2>
+    <p id="product-description" class="product__descr">
+      Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.
+    </p>
+    <p id="product-price" class="product__price">
+      Цена: <span itemprop="price" aria-label="1000 рублей">1000 руб.</span>
+    </p>
+    <button type="button" aria-label="Купить {Название товара} за {1000} рублей">Купить</button>
+  </div>
+</article>
