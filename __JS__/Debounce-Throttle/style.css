@@ -1,0 +1,40 @@
+html {
+  background-color: #427a3a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 3px;
+  font-family: Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 100px 70px;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 32px;
+  margin: 0 0 42px;
+}
+
+input {
+  padding: 10px;
+  margin: 0 0 22px;
+  outline: 0;
+  border: 10px solid #f7f7f7;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+.item {
+  margin-bottom: 12px;
+  font-size: 28px;
+  color: #fff;
+}
