@@ -1,0 +1,49 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  max-width: 1024px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+/*-----------------------------------*/
+
+.tabs {
+}
+.tabs__nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.tabs__nav-item {
+}
+.tabs__nav-button {
+}
+.tabs__nav-button:focus {
+  color: #fff;
+}
+.tabs__nav-button_active {
+  background-color: gray;
+}
+
+.tabs__content {
+}
+.tabs__panel {
+  display: none;
+}
+
+.tabs__panel_active {
+  display: block;
+  width: 300px;
+  height: 50px;
+  border: 1px solid gray;
+}
