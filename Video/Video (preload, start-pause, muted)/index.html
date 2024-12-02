@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="videoblock">
+      <div class="container">
+        <div class="videoblock__content">
+          <button class="videoblock__play-btn flex-center" aria-label="включить видео">
+            <svg class="icon icon_play-btn">
+              <use href="./img/svg/_sprite.symbol.svg#play-btn"></use>
+            </svg>
+          </button>
+          <button class="videoblock__btn-muted flex-center active" aria-label="звук видео выкл">
+            <svg class="icon icon_sound-off">
+              <use href="./img/svg/_sprite.symbol.svg#sound-off"></use>
+            </svg>
+          </button>
+          <video class="videoblock__video" muted loop preload="metadata" poster="./video.jpg">
+            <source src="./video.mp4" type="video/mp4" />
+            <source src="./video.webm" type="video/webm" />
+            <p>
+              Ваш браузер не поддерживает встроенные видео. Попробуйте скачать его по
+              <a href="./video.mp4">этой ссылке</a>.
+            </p>
+          </video>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
